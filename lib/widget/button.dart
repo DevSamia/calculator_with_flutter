@@ -4,9 +4,7 @@ import 'package:flutter/material.dart';
 
 class MyButton extends StatelessWidget {
   final color;
-
   final textColor;
-
   final String buttonText;
   final onTapButton;
 

@@ -56,13 +56,11 @@ class _CalculatorViewState extends State<CalculatorView> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Align(
-
                       alignment: Alignment.topLeft,
                       child: Container(
-                        color: Colors.pink.shade100,
-                        child: Text(
+                        color: Colors.pink.shade100,width: double.infinity,padding:const EdgeInsets.all(15),
+                        child: Text(    
                           userQuestions,
-
                           style: const TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 18,
@@ -152,6 +150,7 @@ class _CalculatorViewState extends State<CalculatorView> {
     return false;
   }
 
+      
   void equalPressed() {
     String finalQuestions = userQuestions;
     finalQuestions = finalQuestions.replaceAll('X', '*');
